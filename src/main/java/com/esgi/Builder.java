@@ -12,12 +12,12 @@ public class Builder<T> {
 
     private List<Consumer<T>> instanceModifiers = new ArrayList<>();
 
-    public Builder(Supplier<T> instantiator) {
+    private Builder(Supplier<T> instantiator) {
         this.instantiator = instantiator;
     }
 
     public static <T> Builder<T> of(Supplier<T> instantiator) {
-        return new Builder<T>(instantiator);
+        return new Builder<>(instantiator);
     }
 
     public <U> Builder<T> with(BiConsumer<T, U> consumer, U value) {

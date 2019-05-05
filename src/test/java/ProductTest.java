@@ -1,6 +1,5 @@
 import com.esgi.dto.Product;
 import mock.ProductMock;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 

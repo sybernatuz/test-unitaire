@@ -14,7 +14,7 @@ public class UserMock {
                 .build();
     }
 
-    public static User createMinorUser() {
+    static User createMinorUser() {
         return Builder.of(User::new)
                 .with(User::setAge, 14)
                 .with(User::setEmail, "toto@gmail.com")

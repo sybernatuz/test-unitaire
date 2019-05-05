@@ -1,6 +1,5 @@
 import com.esgi.dto.User;
 import mock.UserMock;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
